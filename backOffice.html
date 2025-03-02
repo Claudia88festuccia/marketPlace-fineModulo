@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title id="BackOffice">BackOffice</title>
+</head>
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg bg-light mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">E-commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home" onclick="vaiAllaPagina()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#BackOffice">BackOffice</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput"  >
+                        <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
+
+                    </form>  
+                    
+                </div>
+               
+            </div>
+            
+        </nav>
+        <div class="text-center my-3">
+            <div class="spinner-border text-primary d-none" role="status" id="loadingSpinner">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        
+    </header>
+     
+    <main>
+        <div class="container-fluid my-4 ">
+            <table class="table table-striped table-dark ">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTb">
+                    <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+
+    <script src="backOffice.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

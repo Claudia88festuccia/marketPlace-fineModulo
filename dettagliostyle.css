@@ -1,0 +1,31 @@
+.card {
+    background: #ffffff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.btn-outline-secondary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-outline-secondary:hover {
+    background: #007bff;
+    color: white;
+}

@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Per mantenere gli elementi all'interno della card in colonna */
+    height: 100%; /* Rende tutte le card della stessa altezza */
+    width: 100%; /* Rende tutte le card della stessa larghezza */
+   
+}
+
+.card-body {
+    flex-grow: 1; /* Questo permette al corpo della card di espandersi per riempire la card */
+}
+
+
+
+
